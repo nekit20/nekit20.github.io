@@ -1,74 +1,724 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
-	<!-- Иконка нашего сайта -->
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<!-- Сбрасываем стандартные стили браузера -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<!-- Подключаем свой файл со стилями -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab" rel="stylesheet">
+
+
 </head>
 <body>
-	<section id="main">
-		<div class="main-header">
-			<h1>Никита Якушкин</h1>
-		<span class="main-line"></span>
-		<p>Вёрстка на HTML и CSS <br> Разработка сайтов под ключ</p>
+<script src="bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+<div class="main">
+	<div class="container">
+	    	
+	    	<div class="navigation">
+	    	    <span class="col-sm-1 col-xs-12">Startup</span>
+	    		<a href="#" class="col-sm-1 col-sm-offset-5 col-xs-4">Home</a>
+	    		<a href="#services" class="col-sm-1 col-xs-4">Services</a>
+	    		<a href="#about" class="col-sm-1 col-xs-4">About</a>
+	    		<a href="#works" class="col-sm-1 col-xs-4">Works</a>
+	    		<a href="#blog" class="col-sm-1 col-xs-4">Blog</a>
+	    		
+	    		<a href="#contact" class="col-sm-1 col-xs-4" >Contact</a>
+	    	</div>
+		<div class="hello">
+			<h1 class="text-center">Welcome to STARTUP </h1>
+			<p>Your Favourite Creative Agency Template</p>
+			<a href="#services"><button class="main-btn">Get started</button></a>
 		</div>
-		<div class="main-arrow"></div>
-	</section>
-	<section id="portfolio">
-		<h2 class="portfolio-header">Портфолио</h2>
-		<div class="portfolio-works container">
-			<div class="portfolio-box">
-				<img src="img/portfolio/1.jpg" alt="Первая работа">
-				<a target="blank" href="#">Смотреть работу</a>
-			</div>
-			<div class="portfolio-box">
-				<img src="img/portfolio/2.jpg" alt="Первая работа">
-				<a target="blank" href="#">Смотреть работу</a>
-			</div>
-			<div class="portfolio-box">
-				<img src="img/portfolio/3.jpg" alt="Первая работа">
-				<a target="blank" href="#">Смотреть работу</a>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="container">
-			<div class="footer-info">
-				<p class="footer-name">Никита Якушкин</p>
-				<p>Разработка сайтов<br> под ключ</p>
-			</div>
-		<div class="social-links">
-		<p class="footer-name">Подпишись</p>
-        <a href="#">
-        <picture>
-        	<source type="image/svg+xml" srcset="img/svg/vk.svg">
-        	<img class="vk" src="img/png/vk.png" alt="vk">
-        </picture>
-        </a>
-<a href="#"><picture>
-        	<source type="image/svg+xml" srcset="img/svg/instagram.svg">
-        	<img src="img/png/instagram.png" alt="vk">
-        </picture></a>
-<a href="#"><picture>
-        	<source type="image/svg+xml" srcset="img/svg/twitter.svg">
-        	<img src="img/png/twitter.png" alt="vk">
-        </picture></a>
-		</div>
-<div class="callback">
-	<p class="footer-name">Напишите мне</p>
-	<a target="blank" class="footer-btn" href="https://vk.com/yakushkin0">Заказать сайт</a>
+	</div>
 </div>
-
+<div class="services" id="services">
+	<div class="container">
+		<h3 class="text-center">services</h3>
+		<span></span>
+		<p class="text-center">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+		<div class="col-md-4">
+		    <div class="with_img">
+		    	<picture>
+		    			  <source type="image/svg+xml" srcset="img/services/A.svg"> 
+		    			  <img src="img/services/A.png" alt="">
+		    	</picture>
+		    </div>
+		    <h5 class="text-center">Clean Typography</h5>
+		    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</p>
 		</div>
+		<div class="col-md-4">
+		    <div class="with_img with_img_2">
+		    	<picture>
+		    			  <source type="image/svg+xml" srcset="img/services/slash.svg"> 
+		    			  <img src="img/services/slash.png" alt="">
+		    	</picture>
+		    </div>
+		    <h5 class="text-center">Rock Solid Code</h5>
+		    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</p>
+		</div>
+		<div class="col-md-4">
+		    <div class="with_img with_img_2">
+		    	<picture>
+		    			  <source type="image/svg+xml" srcset="img/services/circle.svg"> 
+		    			  <img src="img/services/circle.png" alt="">
+		    	</picture>
+		    </div>
+		    <h5 class="text-center">Expert Support</h5>
+		    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</p>
+		</div>
+	</div>
+</div>
+<div class="about_us" id="about">
+	<div class="container">
+		<h3 class="text-center">About US</h3>
+		<span></span>
+		    <p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+		    <div class="about_us_information col-md-6">
+		    	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.</p>
+		    </div>
+		    <div class="about_us_information col-md-6">
+		    	<p>
+		    		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Loreipsum dolor sit amet. Lorem ipsum dolor et.
+		    	</p>
+		    </div>
+		    <div class="about_us_photo-block col-md-3 text-center">
+		    <img src="img/About/Photo1.png" alt="">
+<div class="photo">
 
-	</footer>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Facebook.svg"> 
+		      		  <img src="img/About/Facebook.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Twitter.svg"> 
+		      		  <img src="img/About/Twitter.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Google.svg"> 
+		      		  <img src="img/About/Google.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/fa.svg"> 
+		      		  <img src="img/About/fa.png" alt="">
+		      		</picture></a>
+		      </div>
+		      </div>
+		      
+		    	<h5>Md. Khalil Uddin</h5>
+		    	<p>Head of Ideas</p>
+		    </div>
+		    		    <div class="about_us_photo-block col-md-3 text-center">
+
+		     <div class="photo">
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Facebook.svg"> 
+		      		  <img src="img/About/Facebook.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Twitter.svg"> 
+		      		  <img src="img/About/Twitter.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Google.svg"> 
+		      		  <img src="img/About/Google.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/fa.svg"> 
+		      		  <img src="img/About/fa.png" alt="">
+		      		</picture></a>
+		      </div>
+		      </div>
+              <img src="img/About/Photo_2.png" alt="">
+		    	<h5>Rubel Miah</h5>
+		    	<p>Lead WordPress Developer</p>
+		    </div>
+		    		    <div class="about_us_photo-block col-md-3 text-center">
+
+		     <div class="photo">
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Facebook.svg"> 
+		      		  <img src="img/About/Facebook.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Twitter.svg"> 
+		      		  <img src="img/About/Twitter.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Google.svg"> 
+		      		  <img src="img/About/Google.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/fa.svg"> 
+		      		  <img src="img/About/fa.png" alt="">
+		      		</picture></a>
+		      </div>
+		      </div>
+              <img src="img/About/Photo_3.png" alt="">
+		    	<h5>Shamim Mia</h5>
+		    	<p>Sr. Web Developer</p>
+		    </div>
+		    		    <div class="about_us_photo-block col-md-3 text-center">
+
+		     <div class="photo">
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Facebook.svg"> 
+		      		  <img src="img/About/Facebook.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Twitter.svg"> 
+		      		  <img src="img/About/Twitter.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/Google.svg"> 
+		      		  <img src="img/About/Google.png" alt="">
+		      		</picture></a>
+		      </div>
+		      <div class="link-about-us">
+		      	<a href="#" class="link-web"><picture>
+		      		  <source type="image/svg+xml" srcset="img/About/fa.svg"> 
+		      		  <img src="img/About/fa.png" alt="">
+		      		</picture></a>
+		      </div>
+		      </div>
+              <img src="img/About/Photo_4.png" alt="">
+		    	<h5>John Doe</h5>
+		    	<p>Front-end Developer</p>
+		    </div>
+	</div>
+</div>
+<div class="latest-works" id="works">
+	<div class="container">
+		<h3 class="text-center">latest works</h3>
+		<span></span>
+		<div class="link-menu-works text-center">
+			<p class="latest-works-menu latest-works-menu-1" id="workMenu1" onclick="change(1)">All</p>
+			<p class="latest-works-menu" onclick="change(2)" id="workMenu2">Branding</p>
+			<p class="latest-works-menu" onclick="change(3)" id="workMenu3">Design</p>
+			<p class="latest-works-menu" onclick="change(4)" id="workMenu4">Development</p>
+			<p class="latest-works-menu" onclick="change(5)" id="workMenu5">Strategy</p>
+		</div>
+		<div class="photo-works-all" id="photo-works1">
+			<div class="col-md-4 photo-works">
+				  <img src="img/Works/hairdryer.png" alt="">
+				  <div class="photo-works-covering">
+				  	<h5>Hair Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/bird.png" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Hair Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/note.png" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Hair Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/camera.png" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Hair Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/bicycle.png" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Hair Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/note2.png" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Hair Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/garden.png" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Hair Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/table.png" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Hair Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works photo-works-last">
+				<img src="img/Works/book.png" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Hair Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+		</div>
+		<div class="branding-works" id="photo-works2">
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Branding/1.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Branding/2.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Branding/3.jpeg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Branding/4.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Branding/5.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Branding/6.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Branding/7.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Branding/8.jpeg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works photo-works-last">
+				<img src="img/Works/Branding/9.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+		</div>
+		<div class="branding-works" id="photo-works3">
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Design/1.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Design/2.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Design/3.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Design/4.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Design/5.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Design/6.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Design/7.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Design/8.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works photo-works-last">
+				<img src="img/Works/Design/9.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+		</div>
+		<div class="branding-works" id="photo-works4">
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Development/1.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Development/2.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Development/3.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Development/4.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Development/5.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Development/6.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Development/7.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Development/8.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works photo-works-last">
+				<img src="img/Works/Development/9.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+		</div>
+		<div class="branding-works" id="photo-works5">
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Strategy/1.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Strategy/2.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Strategy/3.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Strategy/4.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Strategy/5.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Strategy/6.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Strategy/7.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works">
+				<img src="img/Works/Strategy/8.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+			<div class="col-md-4 photo-works photo-works-last">
+				<img src="img/Works/Strategy/9.jpg" alt="">
+				<div class="photo-works-covering">
+				  	<h5>Dresser</h5>
+				  	<p>Branding</p>
+				  	<button><p id="text-btn">View</p><span></span><span id="works-span"></span></button>
+				  </div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="your_project">
+	<h2>Do you like OUR WORK so far?</h2>
+	<h2>Let's talk about YOUR PROJECT!</h2>
+	<a href="#contact"><button class="main-btn project-btn">Get in touch</button></a></div>
+<div class="blog" id="blog">
+
+	<div class="container">
+		<h3 class="text-center">Recent blog posts</h3>
+			<span class="h-span"></span>
+			<p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+			<div class="blog-photo">
+				<img src="img/Blog/woodTable.png" alt="">
+					<div class="date">
+					<span>18</span><br>
+					<span>O C T</span>
+					</div>
+					<div class="blog-photo-text">
+						<h4>Startup ideas needs to be funded </h4>
+						<p id="blog-p">By <span>Khalil</span> Uddin in <span>Development</span></p>
+						<p class="blog-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam </p>
+						<a href="#">read more</a>
+					</div>
+
+
+					</div>
+					<div class="blog-photo">
+				<img src="img/Blog/whiteTable.png" alt="">
+					<div class="date">
+					<span>18</span><br>
+					<span>O C T</span>
+					</div>
+					<div class="blog-photo-text">
+						<h4>User Interface Designing Elements</h4>
+						<p id="blog-p">By <span>Khalil</span> Uddin in <span>Development</span></p>
+						<p class="blog-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore et dolore aliquyam  </p>
+						<a href="#">read more</a>
+					</div>
+
+
+					</div>
+			</div>
+	</div>
+<div class="get-in-touch" id="contact">
+	<div class="container">
+		<h3 class="text-center">Get in touch</h3>
+			<span class="h-span"></span>
+			<p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+			<div class="contact">
+				
+					<div class="contact-box">
+						<picture>
+						  <source type="image/svg+xml" srcset="img/Get-in-touch/gps.svg"> 
+						  <img src="img/Get-in-touch/gps.png" alt="">
+						</picture>
+										
+										
+						
+							<h6>address</h6>
+							<p>312, 7th Ave, New York <br>NY 101200, United States of America</p>
+					</div>
+						<div class="contact-box">
+							<picture>
+											  <source type="image/svg+xml" srcset="img/Get-in-touch/phone.svg"> 
+											  <img src="img/Get-in-touch/phone.png" alt="">
+											</picture>
+												
+											
+												
+							<h6>hotline (24X7)</h6>
+							<p>+65 0052 300, +65 88251 210 <br> +88 01723 511 340</p>
+						</div>
+						<div class="contact-box">
+							<picture>
+											  <source type="image/svg+xml" srcset="img/Get-in-touch/mail.svg"> 
+											  <img src="img/Get-in-touch/mail.png" alt="">
+											</picture>
+												
+											
+												<h6>E-mail</h6>
+												<p>shapedtheme@gmail.com <br> khalilkode@gmail.com</p>
+						</div>
+				
+			</div>
+			<form class="form-inline">
+  <div class="form-group">
+    
+    <input type="text" placeholder="YOUR NAME" id="input-name">
+  </div>
+  <div class="form-group">
+    
+    <input type="text" placeholder="YOUR E-MAIL" id="input-mail">
+  </div>
+  <div class="form-group">
+    
+    <input type="text" placeholder="YOUR SUBJECT" id="input-name-2">
+  </div>
+  <div class="form-group">
+    
+    <input type="text" placeholder="COMPANY NAME" id="input-mail-2">
+  </div>
+  <textarea class="form-control" rows="8" id="textarea" placeholder="WRITE YOUR MESSAGE"></textarea>
+  <button>SEND MESSAGE</button>
+  <p><span>*</span> We’ll contact you as as possible. We don’t reply on Monday</p>
+</form>
+</div>
+</div>
+<div class="footer">
+	<div class="footer-icon">
+		<a href="#"></a>
+	</div>
+	<div class="footer-icon">
+		<a href="#"></a>
+	</div>
+	<div class="footer-icon">
+		<a href="#"></a>
+	</div>
+	<div class="footer-icon">
+		<a href="#"></a>
+	</div>
+	<span class="h-span" id="footer-span"></span>
+	<p>© 2017 Startup, Designed by Nikita Yakushkin</p>
+</div>
 </body>
 </html>
