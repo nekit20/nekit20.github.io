@@ -299,35 +299,53 @@ color: #959595;
 		font-size: 8px;
 	}
 	.photo {
-		width: 100%;
-		height: 100%;
+		background: none;
 		position: relative;
+		left:0%;
 		height: 50vh;
+		width: 100%;
+		z-index: 0;
 	}
 	.beat {
-		top:10%;
+		top:30%;
 		left: 50%;
 		z-index: 2;
+width: 50rem;
 	}
 	.disc {
-top: 10%;
+		width: 50rem;
+top: 30%;
 		z-index: 1;
-		left: 62%;
+		left: 66%;
 		position: absolute;
 	}
 	.photo:before {
 		left: 0;
-		width: 100%;
-		z-index: 1;
 
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -1;
+		
+	}
+	.photo:after {
+		content: "";
+		background: rgba(23,45,68,.9);
+		z-index: 2;
+		position: absolute;
+		left:0;
+		width: 100%;
+		height: 100%;
 	}
 	iframe {
-	width: 103.5%;
+	width: 104%;
 	height: 50vh;
 	position: relative;
-	margin-left: -1.6%;
+	margin-left: -2%;
 	margin-top: 50vh;
 	z-index: 1;
+	padding: 0;
+
 }
 #event {
 	position: relative;
@@ -338,18 +356,68 @@ top: 10%;
 	margin-bottom: -12.5rem;
 }
 .instagram-box {
-	top:35%;
-	width: 20%;
-	height: 30%;
+	top:46.5%;
+	width: 50%;
+	height: 20%;
 
 }
 .instagram-box h1 {
-	font-size: 4rem;
+	font-size: 10rem;
 }
 
+.description h1, .video-info h1 {
+	padding-top: 23%;
+	font-size: 10rem;
 }
-@media (max-width:845px) {
-	html {
-		font-size: 8px;
-	}
+.description {
+	padding-top:0%;
+	margin:0;
+	
+}
+.video-info h5 {
+	font-size: 4rem;
+}
+.video-info a {
+	font-size: 3rem;
+}
+
+.video-info h1 {
+	padding-top: 15%;
+}
+.video-info p a {
+	font-size: 5rem;
+}
+.description p, .video-info p{
+font-size: 5rem;
+}
+header {
+	margin:0;
+	margin-bottom:-9%;
+	height: 100vh;
+}
+#event span, #event p {
+	font-size: 3.5rem;
+}
+#event h1{
+font-size: 8rem;
+}
+.timer #day, .timer #hour, .timer #minute, .timer #second {
+	font-size: 8rem;
+}
+.instagram img {
+	width: 33.33%;
+}
+.instagram {
+	height: 80vh;
+}
+.instagram-box img {
+	width: 20%;
+}
+.footer-box p{
+font-size: 2.5rem;
+}
+.daft-punk {
+	background-size: cover;
+	width: 100%
+}
 }
