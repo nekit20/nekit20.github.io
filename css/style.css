@@ -294,6 +294,18 @@ color: #959595;
 .button img {
 	width: 20%
 }
+@media (max-width: 412px) {
+	html {
+		font-size: 20px;
+	}
+.instagram {
+	height: 100vh;
+}
+.footer-box {
+	margin-top: 10rem;
+}
+}
+
 @media (max-width: 1024px) {
 	html {
 		font-size: 8px;
@@ -309,13 +321,13 @@ color: #959595;
 	.beat {
 		top:30%;
 		left: 50%;
-		z-index: 2;
+		z-index: 3;
 width: 50rem;
 	}
 	.disc {
 		width: 50rem;
 top: 30%;
-		z-index: 1;
+		z-index: 2;
 		left: 66%;
 		position: absolute;
 	}
@@ -331,7 +343,7 @@ top: 30%;
 	.photo:after {
 		content: "";
 		background: rgba(23,45,68,.9);
-		z-index: 2;
+		z-index: 0;
 		position: absolute;
 		left:0;
 		width: 100%;
@@ -419,5 +431,13 @@ font-size: 2.5rem;
 .daft-punk {
 	background-size: cover;
 	width: 100%
+}
+
+.menu-words a{ 
+margin-right: 5px;
+font-size: 2.2rem;
+}
+.button {
+	z-index: 10;
 }
 }
